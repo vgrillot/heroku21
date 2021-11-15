@@ -1,4 +1,4 @@
-import django_heroku
+# import django_heroku
 
 from pathlib import Path
 
@@ -120,7 +120,6 @@ USE_L10N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
 USE_TZ = True
 
-
 # STATIC
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-root
@@ -174,5 +173,4 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
-
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
