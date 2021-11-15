@@ -1,3 +1,5 @@
+import django_heroku
+
 from pathlib import Path
 
 # GENERAL
@@ -171,3 +173,6 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+
+django_heroku.settings(locals())
