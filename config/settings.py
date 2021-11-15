@@ -1,4 +1,4 @@
-# import django_heroku
+import django_heroku
 
 from pathlib import Path
 
@@ -173,4 +173,4 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
