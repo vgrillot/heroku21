@@ -147,6 +147,12 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # https://docs.djangoproject.com/en/dev/ref/settings/#internal-ips
 # !!!TODO:remove heroku for prod !
 INTERNAL_IPS = ['127.0.0.1', '91.172.197.92']
+if DEBUG:
+    import os  # only if you haven't already imported this
+    import socket  # only if you haven't already imported this
+    hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+    INTERNAL_IPS = [ip[:-1] + '1' for ip in ips] + INTERNAL_IPS
+
 
 # CUSTOM USER MODEL CONFIGS
 # ------------------------------------------------------------------------------
