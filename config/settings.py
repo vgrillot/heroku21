@@ -146,7 +146,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
 # https://docs.djangoproject.com/en/dev/ref/settings/#internal-ips
 # !!!TODO:remove heroku for prod !
-INTERNAL_IPS = ['127.0.0.1', '91.172.197.92']
+INTERNAL_IPS = ['127.0.0.1', '10.1.36.217']
 if DEBUG:
     import os  # only if you haven't already imported this
     import socket  # only if you haven't already imported this
